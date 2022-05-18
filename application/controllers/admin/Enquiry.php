@@ -33,11 +33,12 @@ class Enquiry extends CI_Controller {
                 <thead>
                 <tr>
                   <th>#</th>
-                  <th>Date</th>
                   <th>Name</th>
-                  <th>Contact No</th>
+                  <th>Primary No</th>
+                  <th>Secondary No</th>
                   <th>Email</th>
-                  <th>Message</th>
+                  <th>DOB</th>
+                  <th>Course</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -52,11 +53,12 @@ class Enquiry extends CI_Controller {
                ?>
                   <tr>
                   <td><?php echo $i++;?></td>
-                  <td><?php echo $row['created_at']; ?></td>
                   <td><?php echo $row['name']; ?></td>
-                  <td><?php echo $row['phone_no']; ?></td>
+                  <td><?php echo $row['primary_no']; ?></td>
+                  <td><?php echo $row['secondary_no']; ?></td>
                   <td><?php echo $row['email']; ?></td>
-                  <td><?php echo $row['message']; ?></td>
+                  <td><?php echo $row['dob']; ?></td>
+                  <td><?php echo $row['course']; ?></td>
                   </td>
                 </tr>
               <?php }} ?>
@@ -81,14 +83,4 @@ class Enquiry extends CI_Controller {
 		$data['main_page'] = 'backend/enquiry/list';
 		$this->load->view('layout/template',$data);
 	}
-	// public function View()
-	// {
-	// 	$id = base64_decode($this->uri->segment(4));
-	// 	$where_arr = array('id'=>$id);
-	// 	$data['record1'] = $this->common_model->get_records('enquiry','',$where_arr);
-	// 	echo $sql = $this->db->last_query();die;
-	// 	//$this->load->view('material_master/print',$data);
-	// 	$data['main_page'] = 'contact_us_form/view';
-	// 	$this->load->view('enquiry/view',$data);
-	// }
 }

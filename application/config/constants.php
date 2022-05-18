@@ -152,3 +152,9 @@ define('COURSE', 'course');
 define('COURSE_COMPONENT', 'course_component');
 define('PROGRAM', 'program');
 define('MERIT', 'merit');
+
+define('SEMESTER', 'semester');
+define('EMPLOYEES', 'employees');
+define('DISCIPLINARY', 'disciplinary');
+define('ATTENDANCE', 'attendance');
+define('ATTENDANCEREPORT', 'attendancereport');

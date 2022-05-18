@@ -25,7 +25,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 date_default_timezone_set('Asia/Kolkata');
 define('APP_URL', ($_SERVER['SERVER_PORT'] == 443 ? 'https' : 'http') . "://{$_SERVER['SERVER_NAME']}".str_replace(basename($_SERVER['SCRIPT_NAME']),"",$_SERVER['SCRIPT_NAME']));
-$config['base_url'] = 'http://'. $_SERVER['HTTP_HOST'].'/bmtu_kishan';
+
+$config['base_url'] = APP_URL;
+
 /*
 |--------------------------------------------------------------------------
 | Index File
