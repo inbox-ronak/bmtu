@@ -152,6 +152,10 @@ define('COURSE', 'course');
 define('COURSE_COMPONENT', 'course_component');
 define('PROGRAM', 'program');
 define('MERIT', 'merit');
+define('STUDENT_DETAILS', 'student_details');
+define('STUDENT_REGISTRATION', 'student_registration');
+define('GENERATE_MERIT', 'generate_merit');
+define('FINAL_ADMISSION_LIST', 'final_admission_list');
 
 define('SEMESTER', 'semester');
 define('EMPLOYEES', 'employees');
